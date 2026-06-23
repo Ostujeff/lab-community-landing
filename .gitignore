@@ -1,0 +1,26 @@
+# dependencies
+app/node_modules/
+
+# build outputs
+app/.next/
+app/out/
+app/build/
+app/next-env.d.ts
+app/*.tsbuildinfo
+
+# env / secrets
+app/.env
+app/.env.local
+app/.env.*.local
+!app/.env.example
+
+# runtime data
+app/data/
+*.db
+*.db-shm
+*.db-wal
+
+# logs / OS
+*.log
+.DS_Store
+

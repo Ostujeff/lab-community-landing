@@ -1,0 +1,15 @@
+[Unit]
+Description=Lab Community Next.js App
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/lab-community/app/.next/standalone
+EnvironmentFile=/opt/lab-community/app/.env
+ExecStart=/usr/bin/node server.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
