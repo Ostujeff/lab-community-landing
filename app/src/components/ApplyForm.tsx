@@ -91,7 +91,7 @@ export default function ApplyForm() {
         </select>
       </Field>
 
-      <Field label="Идея дипломного проекта *" error={errors.diploma_idea}>
+      <Field label="Опиши свой проект *" error={errors.diploma_idea}>
         <textarea
           name="diploma_idea"
           required

@@ -137,7 +137,7 @@ export async function sendLeadNotification(lead: TelegramPayload): Promise<void>
     `<b>Тариф:</b> ${escapeHtml(tierLabels[lead.desired_tier] || lead.desired_tier)}`,
     `<b>Вклад:</b> ${escapeHtml(contributions)}`,
     "",
-    `<b>Идея диплома:</b>`,
+    `<b>Проект:</b>`,
     escapeHtml(lead.diploma_idea),
   ].join("\n");
 

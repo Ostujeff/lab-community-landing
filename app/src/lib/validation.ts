@@ -9,7 +9,7 @@ export const applySchema = z.object({
     .optional(),
   diploma_idea: z
     .string()
-    .min(20, "Опиши идею диплома (минимум 20 символов)"),
+    .min(20, "Опиши проект подробнее (минимум 20 символов)"),
   contributions: z.array(z.string()).optional(),
   desired_tier: z.enum(["student", "listener", "team"]),
   portfolio_url: z.string().url().optional().or(z.literal("")),
