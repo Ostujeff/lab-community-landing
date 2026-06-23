@@ -3,7 +3,7 @@ import { nav } from "@/lib/copy";
 
 export default function SiteHeader() {
   return (
-    <header className="relative z-30 flex items-start justify-between gap-7 px-[var(--landing-gutter)] pt-6">
+    <header className="site-header relative z-30 flex items-start justify-between gap-7 px-[var(--landing-gutter)] pt-6">
       <Link href="/" className="flex items-start gap-3 text-inherit no-underline">
         <span className="rounded border border-[var(--line)] px-2 py-1 font-[family-name:var(--font-unbounded)] text-sm font-bold">
           GK
@@ -28,7 +28,7 @@ export default function SiteHeader() {
           </a>
         ))}
       </nav>
-      <Link href="/apply" className="btn btn-main py-2.5 text-sm">
+      <Link href="/apply" className="btn btn-main site-header-cta py-2.5 text-sm">
         Подать заявку →
       </Link>
     </header>

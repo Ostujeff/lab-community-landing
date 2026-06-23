@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mx-[var(--landing-gutter)] flex flex-col justify-between gap-6 border-t border-[var(--line)] py-7 md:flex-row">
+    <footer className="site-footer mx-[var(--landing-gutter)] flex flex-col justify-between gap-6 border-t border-[var(--line)] py-7 md:flex-row">
       <div>
         <strong className="text-sm">ИИ-лаборатория Глеба Кудрявцева</strong>
         <p className="mt-2 max-w-sm text-sm text-[var(--text-muted)]">
